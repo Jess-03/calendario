@@ -1,0 +1,10 @@
+.cont-general{
+    background-color: rgb(163, 189, 239);
+    height: 100vh;
+}
+
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
