@@ -1,15 +1,16 @@
-.cont-general{
-    background-color: rgb(163 189 239 / 86%);
-    height: 100vh;
-}
-
+/* Estilo para centrar los contenerdores */
 .centrar {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+}.cont-general{
+    background-color: rgb(163 189 239 / 74%);
+    height: 100vh;
 }
 
-
+/* Descripción - Texto */
 h1 {
     font-family: 'Tenor Sans', sans-serif;
     font-size: 34px;
@@ -22,14 +23,17 @@ p{
     font-size: 18px;
 }
 
+/* Contenedor de datos solicitados */
 .row_datos p {
     margin-left: 18px;
 }
 
+/* Campos dd/mm/aa */
 .input-group {
     font-family: 'Maven Pro', sans-serif;
 }
 
+/* Botón calcular */
 .btn {
     font-family: 'Maven Pro', sans-serif; 
 }
