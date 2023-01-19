@@ -35,48 +35,47 @@
                     <div class="row_datos">
                         <p>Fecha:</p>
 
-                        <div class="input-group m-2">
-                            <!-- Día -->
-                            <input type="text" class="day form-control col-2 m-2" placeholder="Día">
+                        <form action="#">
+                            <div class="input-group m-2">
+                                <!-- Día -->
+                                <input type="text" id="day" class="day form-control col-2 m-2" placeholder="Día">
 
-                            <!-- Mes -->
-                            <select class="month form-select col-2 m-2" id="inputGroupSelect01">
-                            <option selected>Mes</option>
-                            <option value="1">Enero</option>
-                            <option value="2">Febrero</option>
-                            <option value="3">Marzo</option>
-                            <option value="4">Abril</option>
-                            <option value="5">Mayo</option>
-                            <option value="6">Junio</option>
-                            <option value="7">Julio</option>
-                            <option value="8">Agosto</option>
-                            <option value="9">Septiembre</option>
-                            <option value="10">Octubre</option>
-                            <option value="11">Noviembre</option>
-                            <option value="12">Diciembre</option>
-                            </select>
+                                <!-- Mes -->
+                                <select class="month form-select col-2 m-2" id="months">
+                                    <option selected>Mes</option>
+                                    <option value="Enero">Enero</option>
+                                    <option value="Febrero">Febrero</option>
+                                    <option value="Marzo">Marzo</option>
+                                    <option value="Abril">Abril</option>
+                                    <option value="Mayo">Mayo</option>
+                                    <option value="Junio">Junio</option>
+                                    <option value="Julio">Julio</option>
+                                    <option value="Agosto">Agosto</option>
+                                    <option value="Septiembre">Septiembre</option>
+                                    <option value="Octubre">Octubre</option>
+                                    <option value="Noviembre">Noviembre</option>
+                                    <option value="Diciembre">Diciembre</option>
+                                </select>
 
-                            <!-- Año -->
-                            <input type="text" class="year form-control col-2 m-2" placeholder="Año">
-                        </div>
+                                <!-- Año -->
+                                <input type="text" class="year form-control col-2 m-2" id="year" placeholder="Año">
+                            </div>
+                        </form>
+
                     </div>
 
-                    <!-- Boton calcular -->
+                    <!-- Botón calcular -->
                     <div class="d-grid gap-1 d-md-block m-3">
-                        <button type="button" class="btn btn-light">Calcular</button>
+                        <button type="button" class="btn btn-light" onclick="calculate()">Calcular</button>
                     </div>
 
 
                     <!-- Resultado -->
                     <div class="resultado">
                         <div class="input-group m-2">
-                            <input type="text" class=" day form-control m-2" placeholder="Día">
-                            <input type="text" class=" day form-control m-2" placeholder="¿Laboral o fin de semana?">
+                            <input type="text" class=" day form-control m-2" placeholder="Día" id="dayOfTheWeek">
+                            <input type="text" class=" day form-control m-2" id="whatDayIs" placeholder="¿Laboral o fin de semana?">
                         </div>
-
-                        <!-- <input type="text" class=" day form-control col-sm-2 m-2" placeholder="Día">
-                        <input type="text" class=" day form-control col-sm-2 m-2" placeholder="¿Laboral o fin de semana?"> -->
-                                    
                     </div>
                 </div>
 
@@ -86,17 +85,14 @@
         </div>
     </div>
 
-
-
-
-
-
-
+    <!-- Script del calendario -->
+    <script src="script.js"></script>
 
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
