@@ -56,7 +56,7 @@ const calculate = () => {
     //Pasar el número del día de la semana al nombre que le corresponde
     dayWeek = getData();
     let numberOfTheWeek = dayWeek.getDay();
-    const daysOfTheWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes"];
+    const daysOfTheWeek = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
     
     let dayOfTheWeek = daysOfTheWeek[numberOfTheWeek];
     document.getElementById("dayOfTheWeek").value = dayOfTheWeek;
